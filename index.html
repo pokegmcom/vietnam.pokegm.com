@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeHunt - Trò chơi thu thập và nuôi dưỡng quái vật pixel cổ điển | PokeHunt</title>
+    <meta name="description" content="PokeHunt - Trò chơi thu thập và nuôi dưỡng quái vật cổ điển với phong cách pixel retro! Một trò chơi RPG theo lượt tôn vinh các trò chơi quái vật kinh điển. Người chơi sẽ đóng vai trò huấn luyện viên, khám phá thế giới mở, thu thập hàng trăm loại quái vật độc đáo, xây dựng đội hình chiến đấu riêng và đối đầu với các người lãnh đạo điện và huấn luyện viên huyền thoại để tái hiện những kỷ niệm đầy nhiệt huyết tuổi thơ!">
+    <meta name="keywords" content="PokeHunt, pixel cổ điển, thu thập quái vật, trò chơi nuôi dưỡng, thế giới mở, điện, trò chơi chiến thuật, hướng dẫn chơi, trang chính thức PokeHunt">
+    <meta name="author" content="Pokegm">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="PokeHunt - Trang Chính Thức">
+    <meta property="og:description" content="PokeHunt - Trò chơi thu thập và nuôi dưỡng quái vật cổ điển với phong cách pixel retro! Một trò chơi RPG theo lượt tôn vinh các trò chơi quái vật kinh điển. Người chơi sẽ đóng vai trò huấn luyện viên, khám phá thế giới mở, thu thập hàng trăm loại quái vật độc đáo, xây dựng đội hình chiến đấu riêng và đối đầu với các người lãnh đạo điện và huấn luyện viên huyền thoại để tái hiện những kỷ niệm đầy nhiệt huyết tuổi thơ!">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://www.pokegm.com">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <!-- Thanh điều hướng -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <img src="logo.png" alt="Logo PokeHunt" class="logo">
+                <h1>PokeHunt</h1>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu trò chơi</a></li>
+                <li><a href="#guide">Hướng dẫn chơi</a></li>
+                <li><a href="#download">Tải xuống ngay</a></li>
+                <li><a href="#contact">Liên kết</a></li>
+            </ul>
+            <!-- Bộ chọn ngôn ngữ dạng thả xuống -->
+            <div class="language-selector">
+                <button onclick="toggleLanguageDropdown()">
+                    <span>Tiếng Việt</span>
+                    <span>▼</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="https://game.pokegm.com">简体中文</a>
+                    <a href="https://taiwan.pokegm.com">繁體中文(台灣)</a>
+                    <a href="https://hongkong.pokegm.com">繁體中文(香港)</a>
+                    <a href="https://macau.pokegm.com">繁體中文(澳門)</a>
+                    <a href="https://korea.pokegm.com">한국어</a>
+                    <a href="https://singapore.pokegm.com">English</a>
+                    <a href="https://malaysia.pokegm.com">Malay</a>
+                    <a href="https://vietnam.pokegm.com">Tiếng Việt</a>
+                </div>
+            </div>
+            <button class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Banner chính (khu vực trang chủ) -->
+    <section id="home" class="hero">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <div class="slide-content">
+                    <h2>PokeHunt - Trò chơi thu thập và nuôi dưỡng quái vật pixel cổ điển!</h2>
+                    <p>Một trò chơi RPG theo lượt tôn vinh các trò chơi quái vật kinh điển, với phong cách pixel cổ điển mang lại nét đẹp trong ký ức!</p>
+                    <a href="https://new.yinyouwl.com/y92.0l108/rxKmUldO6YzewvoRw_1_PA/YBrw.html" class="btn btn-primary">Tải xuống ngay</a>
+                </div>
+            </div>
+            <div class="slide fade">
+                <div class="slide-content">
+                    <h2>Khám phá thế giới mở và thu thập quái vật!</h2>
+                    <p>Khám phá các khu vực bí ẩn trong thế giới mở rộng lớn và thu thập hàng trăm loại quái vật độc đáo!</p>
+                    <a href="https://new.yinyouwl.com/y92.0l108/rxKmUldO6YzewvoRw_1_PA/YBrw.html" class="btn btn-primary">Tải xuống ngay</a>
+                </div>
+            </div>
+            <div class="slide fade">
+                <div class="slide-content">
+                    <h2>Đấu chiến với người lãnh đạo điện và huấn luyện viên huyền thoại!</h2>
+                    <p>Xây dựng đội hình chiến đấu riêng và tham gia các trận đấu hấp dẫn với người lãnh đạo điện và huấn luyện viên huyền thoại!</p>
+                    <a href="#guide" class="btn btn-primary">Xem hướng dẫn</a>
+                </div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Khu vực đặt trước -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2 class="section-title">Tải xuống ngay</h2>
+            <div class="download-content">
+                <div class="download-info">
+                    <p>PokeHunt đã ra mắt! Tải xuống ngay bây giờ để bước vào thế giới trò chơi thu thập và nuôi dưỡng quái vật pixel cổ điển!</p>
+                    <p>Nền tảng hỗ trợ: Android, iOS, PC, HarmonyOS</p>
+
+                </div>
+                <div class="download-buttons">
+                    <a href="https://new.yinyouwl.com/y92.0l108/rxKmUldO6YzewvoRw_1_PA/YBrw.html" class="btn btn-primary btn-large">Tải xuống phiên bản di động ngay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Khu vực giới thiệu trò chơi -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Giới thiệu trò chơi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>PokeHunt là một trò chơi thu thập và nuôi dưỡng quái vật truyền thống với phong cách pixel retro. Đây là một trò chơi RPG theo lượt chỉ huy gửi lời ca ngợi đến những trò chơi quái vật truyền thống, tái hiện hấp dẫn của những trò chơi quái vật truyền thống đồng thời thêm yếu tố khám phá thế giới mở mới.</p>
+                    <p>Người chơi sẽ đóng vai trò là huấn luyện viên quái vật để khám phá các khu vực bí ẩn trong thế giới mở, bắt và thu thập hàng trăm loại quái vật độc đáo, và xây dựng đội hình chiến đấu riêng. Tham gia vào những cuộc chiến gay cấn với người lãnh đạo điện và huấn luyện viên huyền thoại, và tái tạo lại những kỷ niệm nhiệt huyết thời thơ ấu của bạn!</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <h3>Phong cách pixel retro</h3>
+                        <p>Với đồ họa phong cách retro gợi nhớ lại những kỷ niệm thời thơ ấu, tái hiện hấp dẫn của những trò chơi quái vật truyền thống</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Hàng trăm loại quái vật</h3>
+                        <p>Bắt và thu thập những quái vật độc đáo với nhiều loại khác nhau để xây dựng đội hình chiến đấu riêng</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Chiến đấu chiến lược theo lượt</h3>
+                        <p>Xây dựng đội hình một cách chiến lược và tham gia vào những cuộc chiến gay cấn với người lãnh đạo điện và huấn luyện viên huyền thoại</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Khám phá thế giới mở</h3>
+                        <p>Khám phá các khu vực bí ẩn trong thế giới mở rộng lớn và tìm kiếm những quái vật ẩn khuất</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Trình chiếu ảnh đặc sắc trò chơi -->
+            <div class="about-slider">
+                <div class="slider-container">
+                    <div class="slider-slide fade">
+                        <img src="1.jpg" alt="Ảnh đặc sắc trò chơi1" class="slider-image">
+                    </div>
+                    <div class="slider-slide fade">
+                        <img src="2.jpg" alt="Ảnh đặc sắc trò chơi2" class="slider-image">
+                    </div>
+                    <div class="slider-slide fade">
+                        <img src="3f.jpg" alt="Ảnh đặc sắc trò chơi3" class="slider-image">
+                    </div>
+                    <div class="slider-slide fade">
+                        <img src="4.jpg" alt="Ảnh đặc sắc trò chơi4" class="slider-image">
+                    </div>
+                    <div class="slider-slide fade">
+                        <img src="5.jpg" alt="Ảnh đặc sắc trò chơi5" class="slider-image">
+                    </div>
+                </div>
+                <!-- Nút điều khiển -->
+                <a class="slider-prev" onclick="plusFeatureSlides(-1)">&lt;</a>
+                <a class="slider-next" onclick="plusFeatureSlides(1)">&gt;</a>
+                <!-- Chỉ thị -->
+                <div class="slider-dots">
+                    <span class="slider-dot" onclick="currentFeatureSlide(1)"></span>
+                    <span class="slider-dot" onclick="currentFeatureSlide(2)"></span>
+                    <span class="slider-dot" onclick="currentFeatureSlide(3)"></span>
+                    <span class="slider-dot" onclick="currentFeatureSlide(4)"></span>
+                    <span class="slider-dot" onclick="currentFeatureSlide(5)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Khu vực hướng dẫn chơi -->
+    <section id="guide" class="guide">
+        <div class="container">
+            <h2 class="section-title">Hướng dẫn chơi</h2>
+            <div class="guide-content">
+                <div class="guide-item">
+                    <h3>Hướng dẫn dành cho người mới</h3>
+                    <div class="guide-steps">
+                        <div class="step">
+                            <h4>1. Tải xuống ngay</h4>
+                            <p>Hoàn thành việc đặt trước trò chơi. Bạn có thể tải ngay khi trò chơi phát hành vào tháng 2 năm 2026.</p>
+                        </div>
+                        <div class="step">
+                            <h4>2. Tìm quái vật đầu tiên</h4>
+                            <p>Bắt đầu khám phá thế giới mở và tìm quái vật ở các khu vực khác nhau. Nhấn vào quái vật xuất hiện trên màn hình để thu thập.</p>
+                        </div>
+                        <div class="step">
+                            <h4>3. Nuôi dưỡng quái vật</h4>
+                            <p>Cho quái vật bạn thu thập ăn và tích lũy điểm kinh nghiệm để tiến hóa. Hãy phát triển chúng thành quái vật mạnh mẽ!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="guide-item">
+                    <h3>Chiến thuật nâng cao</h3>
+                    <div class="guide-tips">
+                    <div class="tip">
+                        <h4>Sử dụng quan hệ kiểu đặc tính</h4>
+                        <p>Mỗi quái vật có điểm mạnh và điểm yếu đối với các kiểu đặc tính khác nhau. Sử dụng hợp lý quan hệ này trong trận chiến theo lượt để giành chiến thắng.</p>
+                    </div>
+                    <div class="tip">
+                        <h4>Kết hợp kỹ năng</h4>
+                        <p>Kết hợp kỹ năng của quái vật một cách hợp lý để gây ra nhiều sát thương hơn. Hãy lưu ý thời gian hồi chiêu cho các kỹ năng đặc biệt.</p>
+                    </div>
+                    <div class="tip">
+                        <h4>Xây dựng đội hình</h4>
+                        <p>Xây dựng đội hình riêng với nhiều kiểu đặc tính khác nhau. Chuẩn bị đội hình phù hợp để đấu với người lãnh đạo điện và huấn luyện viên huyền thoại.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Khu vực liên hệ -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Liên hệ</h2>
+            <div class="contact-info">
+                <p>Nếu bạn có bất kỳ câu hỏi hoặc đề xuất liên quan đến trò chơi, vui lòng liên hệ với chúng tôi qua email.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chân trang -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="friend-links">
+                    <span>Liên kết bạn bè: </span>
+                    <a href="https://game.pokegm.com">精灵物语</a>
+                    <a href="https://taiwan.pokegm.com">精靈物語</a>
+                    <a href="https://hongkong.pokegm.com">精靈物語</a>
+                    <a href="https://macau.pokegm.com">精靈物語</a>
+                    <a href="https://korea.pokegm.com">포케헌트</a>
+                    <a href="https://singapore.pokegm.com">PokeHunt</a>
+                    <a href="https://malaysia.pokegm.com">PokeHunt</a>
+                    <a href="https://vietnam.pokegm.com">PokeHunt</a>
+                </div>
+                <div class="footer-contact">
+                    <p>Nếu bạn có bất kỳ câu hỏi hoặc đề xuất liên quan đến trò chơi, vui lòng liên hệ với chúng tôi qua email: <a href="mailto:game@pokegm.com" style="color: rgba(255,255,255,0.9); text-decoration: underline;">game@pokegm.com</a></p>
+                </div>
+            </div>
+            <p class="footer-copyright">&copy; 2026 Pokehunt. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Banner chính trên cùng
+        let slideIndex = 1;
+        showHeroSlides(slideIndex);
+
+        function plusSlides(n) {
+            showHeroSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showHeroSlides(slideIndex = n);
+        }
+
+        // Điều khiển banner chính trên cùng
+        function showHeroSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+        
+        // Điều khiển slider đặc điểm trò chơi
+        let featureSlideIndex = 1;
+        showFeatureSlides(featureSlideIndex);
+        
+        function plusFeatureSlides(n) {
+            showFeatureSlides(featureSlideIndex += n);
+        }
+        
+        function currentFeatureSlide(n) {
+            showFeatureSlides(featureSlideIndex = n);
+        }
+        
+        function showFeatureSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slider-slide");
+            let dots = document.getElementsByClassName("slider-dot");
+            if (n > slides.length) {featureSlideIndex = 1}
+            if (n < 1) {featureSlideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[featureSlideIndex-1].style.display = "block";
+            dots[featureSlideIndex-1].className += " active";
+        }
+
+        // Slider tự động
+        // Chuyển banner chính tự động
+        setInterval(() => {
+            plusSlides(1);
+        }, 5000);
+        
+        // Chuyển slider đặc điểm trò chơi tự động
+        setInterval(() => {
+            plusFeatureSlides(1);
+        }, 4000);
+
+        // Toggle menu di động
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const navbarMenu = document.querySelector('.navbar-menu');
+
+        navbarToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+
+        // Bộ chọn ngôn ngữ dạng thả xuống
+        function toggleLanguageDropdown() {
+            document.querySelector('.language-selector').classList.toggle('active');
+        }
+
+        // Đóng menu thả xuống khi nhấp ra ngoài
+        window.addEventListener('click', function(event) {
+            if (!event.target.closest('.language-selector')) {
+                document.querySelector('.language-selector').classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
