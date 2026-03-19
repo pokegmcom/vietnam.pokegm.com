@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn Chơi - Tiên Tố Vật (PokeHunt) | Cách Chơi, Mẹo, Chiến Thuật</title>
+    <meta name="description" content="Tìm hiểu cách chơi Tiên Tố Vật (PokeHunt) với các hướng dẫn chi tiết, mẹo và chiến thuật hữu ích. Hướng dẫn cho người mới bắt đầu và người chơi nâng cao.">
+    <meta name="keywords" content="PokeHunt, Tiên Tố Vật, cách chơi Pokémon, mẹo game Pokémon, chiến thuật Pokémon, hướng dẫn người mới, game攻略 Việt Nam">
+    <meta property="og:title" content="Hướng Dẫn Chơi - Tiên Tố Vật (PokeHunt)">
+    <meta property="og:description" content="Tìm hiểu cách chơi Tiên Tố Vật (PokeHunt) với các hướng dẫn chi tiết, mẹo và chiến thuật hữu ích">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://vietnam.pokegm.com/guides.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7B68EE',
+                        secondary: '#4CAF50',
+                        accent: '#FFD700',
+                        dark: '#2D2D2D',
+                        light: '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+        
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(123, 104, 238, 0.95) 0%, rgba(76, 175, 80, 0.9) 100%),
+                        url('1.jpg') center/cover no-repeat;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-3d {
+            border: 2px solid transparent;
+            box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-3d:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .nav-blur {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.9);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #7B68EE 0%, #4CAF50 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .guide-card {
+            border-left: 4px solid #7B68EE;
+        }
+        
+        .difficulty-easy { color: #4CAF50; }
+        .difficulty-medium { color: #FFD700; }
+        .difficulty-hard { color: #f44336; }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="fixed top-0 left-0 right-0 z-50 nav-blur shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="logo.png" alt="Tiên Tố Vật (PokeHunt) Logo" class="h-10 w-auto">
+                    <span class="ml-2 text-xl font-bold gradient-text">Tiên Tố Vật (PokeHunt)</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-dark font-medium hover:text-primary transition-colors">Trang chủ</a>
+                    <a href="features.html" class="text-dark font-medium hover:text-primary transition-colors">Tính năng</a>
+                    <a href="guides.html" class="text-primary font-bold">Hướng dẫn</a>
+                    <a href="codes.html" class="text-dark font-medium hover:text-primary transition-colors">Mã đổi</a>
+                    <a href="articles.html" class="text-dark font-medium hover:text-primary transition-colors">Bài viết</a>
+                    <a href="https://discord.gg/Pvkxz96V" target="_blank" class="btn-3d bg-primary text-white px-4 py-2 rounded-xl font-medium">
+                        <i class="fa fa-discord mr-2"></i>Discord
+                    </a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-dark text-2xl">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-3 space-y-3">
+                <a href="index.html" class="block text-dark font-medium hover:text-primary transition-colors">Trang chủ</a>
+                <a href="features.html" class="block text-dark font-medium hover:text-primary transition-colors">Tính năng</a>
+                <a href="guides.html" class="block text-primary font-bold">Hướng dẫn</a>
+                <a href="codes.html" class="block text-dark font-medium hover:text-primary transition-colors">Mã đổi</a>
+                <a href="articles.html" class="block text-dark font-medium hover:text-primary transition-colors">Bài viết</a>
+                <a href="https://discord.gg/Pvkxz96V" target="_blank" class="block btn-3d bg-primary text-white px-4 py-2 rounded-xl font-medium text-center">
+                    <i class="fa fa-discord mr-2"></i>Discord
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-bg pt-32 pb-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-black mb-6">Hướng Dẫn Chơi</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto opacity-90">
+                Tìm hiểu cách chơi PokéGM với các hướng dẫn chi tiết và mẹo hữu ích
+            </p>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black gradient-text mb-4">Hướng Dẫn Cho Người Mới</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Bắt đầu hành trình của bạn với những hướng dẫn cơ bản</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-light rounded-2xl p-8 guide-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm font-medium text-primary">Người mới</span>
+                        <span class="difficulty-easy font-bold"><i class="fa fa-star"></i> Dễ</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Bắt Đầu Chơi</h3>
+                    <p class="text-gray-600 mb-4">Hướng dẫn chi tiết cách bắt đầu chơi PokéGM từ A-Z</p>
+                    <ul class="space-y-2 text-sm text-gray-600 mb-4">
+                        <li><i class="fa fa-check text-secondary mr-2"></i>Tạo nhân vật</li>
+                        <li><i class="fa fa-check text-secondary mr-2"></i>Chọn Pokémon đầu tiên</li>
+                        <li><i class="fa fa-check text-secondary mr-2"></i>Hiểu giao diện game</li>
+                    </ul>
+                    <a href="#" class="text-primary font-medium hover:text-secondary transition-colors">Đọc ngay <i class="fa fa-arrow-right ml-1"></i></a>
+                </div>
+                
+                <div class="card-hover bg-light rounded-2xl p-8 guide-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm font-medium text-primary">Người mới</span>
+                        <span class="difficulty-easy font-bold"><i class="fa fa-star"></i> Dễ</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Thu Thập Pokémon</h3>
+                    <p class="text-gray-600 mb-4">Cách tìm và thu thập Pokémon hiệu quả</p>
+                    <ul class="space-y-2 text-sm text-gray-600 mb-4">
+                        <li><i class="fa fa-check text-secondary mr-2"></i>Tìm Pokémon hiếm</li>
+                        <li><i class="fa fa-check text-secondary mr-2"></i>Chiến thuật bắt</li>
+                        <li><i class="fa fa-check text-secondary mr-2"></i>Tăng tỷ lệ bắt</li>
+                    </ul>
+                    <a href="#" class="text-primary font-medium hover:text-secondary transition-colors">Đọc ngay <i class="fa fa-arrow-right ml-1"></i></a>
+                </div>
+                
+                <div class="card-hover bg-light rounded-2xl p-8 guide-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm font-medium text-primary">Người mới</span>
+                        <span class="difficulty-medium font-bold"><i class="fa fa-star"></i><i class="fa fa-star"></i> Trung bình</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Huấn Luyện Pokémon</h3>
+                    <p class="text-gray-600 mb-4">Cách huấn luyện và nâng cấp Pokémon của bạn</p>
+                    <ul class="space-y-2 text-sm text-gray-600 mb-4">
+                        <li><i class="fa fa-check text-secondary mr-2"></i>Chọn kỹ năng phù hợp</li>
+                        <li><i class="fa fa-check text-secondary mr-2"></i>Nâng cấp đúng cách</li>
+                        <li><i class="fa fa-check text-secondary mr-2"></i>Tiến hóa Pokémon</li>
+                    </ul>
+                    <a href="#" class="text-primary font-medium hover:text-secondary transition-colors">Đọc ngay <i class="fa fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gradient-to-br from-primary to-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black text-white mb-4">Chiến Thuật Nâng Cao</h2>
+                <p class="text-xl text-white opacity-90 max-w-2xl mx-auto">Nâng cao kỹ năng của bạn với các chiến thuật chuyên sâu</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card-hover bg-white rounded-2xl p-8">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm font-medium text-primary">Nâng cao</span>
+                        <span class="difficulty-hard font-bold"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> Khó</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-3">Chiến Thuật PvP</h3>
+                    <p class="text-gray-600 mb-6">Học cách xây dựng đội hình mạnh và chiến thắng trong các trận đấu PvP</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-white font-bold">1</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Hiểu hệ thống loại</h4>
+                                <p class="text-sm text-gray-600">Tìm hiểu ưu và nhược điểm của từng loại Pokémon</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-white font-bold">2</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Xây dựng đội hình cân bằng</h4>
+                                <p class="text-sm text-gray-600">Kết hợp các loại Pokémon để tạo đội hình mạnh</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-white font-bold">3</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Sử dụng kỹ năng đúng lúc</h4>
+                                <p class="text-sm text-gray-600">Tối ưu hóa thời gian sử dụng kỹ năng trong trận đấu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="inline-block mt-6 text-primary font-medium hover:text-secondary transition-colors">Xem chi tiết <i class="fa fa-arrow-right ml-1"></i></a>
+                </div>
+                
+                <div class="card-hover bg-white rounded-2xl p-8">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm font-medium text-primary">Nâng cao</span>
+                        <span class="difficulty-hard font-bold"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> Khó</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-3">Tối Ưu Hóa Tài Nguyên</h3>
+                    <p class="text-gray-600 mb-6">Quản lý tài nguyên hiệu quả để phát triển nhanh hơn</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-white font-bold">1</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Quản lý vàng và xu</h4>
+                                <p class="text-sm text-gray-600">Chi tiêu thông minh để tối đa hóa lợi ích</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-white font-bold">2</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Sử dụng năng lượng hiệu quả</h4>
+                                <p class="text-sm text-gray-600">Lên kế hoạch để không lãng phí năng lượng</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-white font-bold">3</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Hoàn thành nhiệm vụ hàng ngày</h4>
+                                <p class="text-sm text-gray-600">Nhận phần thưởng từ các nhiệm vụ định kỳ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="inline-block mt-6 text-primary font-medium hover:text-secondary transition-colors">Xem chi tiết <i class="fa fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black gradient-text mb-4">Mẹo & Thủ Thuật</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Những mẹo nhỏ giúp bạn chơi hiệu quả hơn</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card-hover bg-light rounded-2xl p-6 text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-clock text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark mb-2">Chơi Đúng Thời Điểm</h3>
+                    <p class="text-sm text-gray-600">Một số Pokémon chỉ xuất hiện vào thời gian cụ thể trong ngày</p>
+                </div>
+                
+                <div class="card-hover bg-light rounded-2xl p-6 text-center">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-map-marker text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark mb-2">Khám Phá Đầy Đủ</h3>
+                    <p class="text-sm text-gray-600">Đừng bỏ qua bất kỳ khu vực nào, Pokémon hiếm có thể ở bất cứ đâu</p>
+                </div>
+                
+                <div class="card-hover bg-light rounded-2xl p-6 text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-users text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark mb-2">Tham Gia Cộng Đồng</h3>
+                    <p class="text-sm text-gray-600">Kết nối với người chơi khác để chia sẻ kinh nghiệm</p>
+                </div>
+                
+                <div class="card-hover bg-light rounded-2xl p-6 text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-calendar text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark mb-2">Theo Dõi Sự Kiện</h3>
+                    <p class="text-sm text-gray-600">Tham gia các sự kiện đặc biệt để nhận phần thưởng giá trị</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-light">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-5xl font-black gradient-text mb-6">Cần Trợ Giúp?</h2>
+            <p class="text-xl text-gray-600 mb-8">
+                Tham gia cộng đồng Discord của chúng tôi để nhận hỗ trợ từ các huấn luyện viên kinh nghiệm
+            </p>
+            <a href="https://discord.gg/Pvkxz96V" target="_blank" class="btn-3d bg-primary text-white px-8 py-4 rounded-2xl font-bold text-lg inline-block">
+                <i class="fa fa-discord mr-2"></i>Tham gia Discord
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="logo.png" alt="Tiên Tố Vật (PokeHunt) Logo" class="h-10 w-auto">
+                    <span class="ml-2 text-xl font-bold">Tiên Tố Vật (PokeHunt)</span>
+                </div>
+                <p class="text-gray-400">Trò chơi Pokémon pixel huyền thoại dành cho cộng đồng Việt Nam</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Liên kết</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Trang chủ</a></li>
+                        <li><a href="features.html" class="text-gray-400 hover:text-white transition-colors">Tính năng</a></li>
+                        <li><a href="guides.html" class="text-gray-400 hover:text-white transition-colors">Hướng dẫn</a></li>
+                        <li><a href="codes.html" class="text-gray-400 hover:text-white transition-colors">Mã đổi</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Hỗ trợ</h4>
+                    <ul class="space-y-2">
+                        <li><a href="articles.html" class="text-gray-400 hover:text-white transition-colors">Bài viết</a></li>
+                        <li><a href="https://discord.gg/Pvkxz96V" target="_blank" class="text-gray-400 hover:text-white transition-colors">Discord</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Liên hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Kết nối</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://discord.gg/Pvkxz96V" target="_blank" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-secondary transition-colors">
+                            <i class="fa fa-discord"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-secondary transition-colors">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-secondary transition-colors">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 PokéGM Việt Nam. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+</body>
+</html>
