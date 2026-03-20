@@ -105,8 +105,24 @@
                     <a href="guides.html" class="text-dark font-medium hover:text-primary transition-colors">Hướng dẫn</a>
                     <a href="codes.html" class="text-dark font-medium hover:text-primary transition-colors">Mã đổi</a>
                     <a href="articles.html" class="text-dark font-medium hover:text-primary transition-colors">Bài viết</a>
-                    <a href="https://discord.gg/Pvkxz96V" target="_blank" class="btn-3d bg-primary text-white px-4 py-2 rounded-xl font-medium">
-                        <i class="fa fa-discord mr-2"></i>Discord
+                    <div class="relative">
+                        <button onclick="toggleLanguageDropdown()" class="text-dark flex items-center space-x-2">
+                            <span>Tiếng Việt</span>
+                            <span class="fa fa-caret-down"></span>
+                        </button>
+                        <div id="languageDropdown" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50">
+                            <a href="https://game.pokegm.com" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">简体中文</a>
+                            <a href="https://taiwan.pokegm.com" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">繁體中文(台灣)</a>
+                            <a href="https://hongkong.pokegm.com" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">繁體中文(香港)</a>
+                            <a href="https://macau.pokegm.com" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">繁體中文(澳門)</a>
+                            <a href="https://korea.pokegm.com" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">한국어</a>
+                            <a href="https://singapore.pokegm.com" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">English</a>
+                            <a href="https://malaysia.pokegm.com" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Malay</a>
+                            <a href="https://vietnam.pokegm.com" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tiếng Việt</a>
+                        </div>
+                    </div>
+                    <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="btn-3d bg-primary text-white px-4 py-2 rounded-xl font-medium">
+                        <i class="fa fa-download mr-2"></i>Tải ngay
                     </a>
                 </div>
                 
@@ -123,14 +139,33 @@
                 <a href="guides.html" class="block text-dark font-medium hover:text-primary transition-colors">Hướng dẫn</a>
                 <a href="codes.html" class="block text-dark font-medium hover:text-primary transition-colors">Mã đổi</a>
                 <a href="articles.html" class="block text-dark font-medium hover:text-primary transition-colors">Bài viết</a>
-                <a href="https://discord.gg/Pvkxz96V" target="_blank" class="block btn-3d bg-primary text-white px-4 py-2 rounded-xl font-medium text-center">
+                <div class="border-t border-gray-200 pt-2">
+                    <button onclick="toggleLanguageDropdown()" class="w-full text-left text-dark flex items-center justify-between">
+                        <span>Ngôn ngữ / Language</span>
+                        <span class="fa fa-caret-down"></span>
+                    </button>
+                    <div id="mobileLanguageDropdown" class="hidden mt-2 space-y-1">
+                        <a href="https://game.pokegm.com" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">简体中文</a>
+                        <a href="https://taiwan.pokegm.com" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">繁體中文(台灣)</a>
+                        <a href="https://hongkong.pokegm.com" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">繁體中文(香港)</a>
+                        <a href="https://macau.pokegm.com" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">繁體中文(澳門)</a>
+                        <a href="https://korea.pokegm.com" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">한국어</a>
+                        <a href="https://singapore.pokegm.com" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">English</a>
+                        <a href="https://malaysia.pokegm.com" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Malay</a>
+                        <a href="https://vietnam.pokegm.com" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tiếng Việt</a>
+                    </div>
+                </div>
+                <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="block btn-3d bg-primary text-white px-4 py-2 rounded-xl font-medium text-center">
+                    <i class="fa fa-download mr-2"></i>Tải ngay
+                </a>
+                <a href="https://discord.gg/Pvkxz96V" target="_blank" class="block bg-gray-100 text-dark px-4 py-2 rounded-xl font-medium text-center">
                     <i class="fa fa-discord mr-2"></i>Discord
                 </a>
             </div>
         </div>
     </nav>
 
-    <section class="hero-bg min-h-screen flex items-center justify-center text-white pt-16">
+    <section class="hero-bg min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex items-center justify-center text-white pt-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight">
                 Chào mừng đến với<br>
@@ -140,7 +175,7 @@
                 Trải nghiệm thế giới Pokémon pixel huyền thoại với đồ họa cổ điển, hệ thống thu thập đa dạng và tính năng chiến đấu hấp dẫn
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#" class="btn-3d bg-accent text-dark px-8 py-4 rounded-2xl font-bold text-lg pulse-animation">
+                <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="btn-3d bg-accent text-dark px-8 py-4 rounded-2xl font-bold text-lg pulse-animation">
                     <i class="fa fa-download mr-2"></i>Tải ngay
                 </a>
                 <a href="features.html" class="btn-3d bg-white text-primary px-8 py-4 rounded-2xl font-bold text-lg">
@@ -211,7 +246,7 @@
                     </div>
                 </div>
                 <div class="floating">
-                    <img src="2.jpg" alt="PokéGM Gameplay" class="rounded-2xl shadow-2xl w-full">
+                    <img src="2.jpg" alt="PokéGM Gameplay" class="rounded-2xl shadow-2xl w-full" loading="lazy">
                 </div>
             </div>
         </div>
@@ -226,7 +261,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="card-hover bg-light rounded-2xl overflow-hidden">
-                    <img src="3.jpg" alt="News 1" class="w-full h-48 object-cover">
+                    <img src="3.jpg" alt="News 1" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-6">
                         <span class="text-sm text-primary font-medium">19/03/2026</span>
                         <h3 class="text-xl font-bold text-dark mt-2 mb-3">Cập nhật phiên bản 2.0</h3>
@@ -236,7 +271,7 @@
                 </div>
                 
                 <div class="card-hover bg-light rounded-2xl overflow-hidden">
-                    <img src="4.jpg" alt="News 2" class="w-full h-48 object-cover">
+                    <img src="4.jpg" alt="News 2" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-6">
                         <span class="text-sm text-primary font-medium">15/03/2026</span>
                         <h3 class="text-xl font-bold text-dark mt-2 mb-3">Sự kiện mùa xuân</h3>
@@ -246,7 +281,7 @@
                 </div>
                 
                 <div class="card-hover bg-light rounded-2xl overflow-hidden">
-                    <img src="5.jpg" alt="News 3" class="w-full h-48 object-cover">
+                    <img src="5.jpg" alt="News 3" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-6">
                         <span class="text-sm text-primary font-medium">10/03/2026</span>
                         <h3 class="text-xl font-bold text-dark mt-2 mb-3">Giải đấu Pokémon</h3>
@@ -316,6 +351,32 @@
         
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+        });
+        
+        function toggleLanguageDropdown() {
+            const desktopDropdown = document.getElementById('languageDropdown');
+            const mobileDropdown = document.getElementById('mobileLanguageDropdown');
+            
+            if (desktopDropdown) {
+                desktopDropdown.classList.toggle('hidden');
+            }
+            if (mobileDropdown) {
+                mobileDropdown.classList.toggle('hidden');
+            }
+        }
+        
+        // Close dropdown when clicking outside
+        window.addEventListener('click', (e) => {
+            const desktopDropdown = document.getElementById('languageDropdown');
+            const mobileDropdown = document.getElementById('mobileLanguageDropdown');
+            const languageButton = document.querySelector('button[onclick="toggleLanguageDropdown()"]');
+            
+            if (desktopDropdown && !desktopDropdown.contains(e.target) && !languageButton.contains(e.target)) {
+                desktopDropdown.classList.add('hidden');
+            }
+            if (mobileDropdown && !mobileDropdown.contains(e.target) && !languageButton.contains(e.target)) {
+                mobileDropdown.classList.add('hidden');
+            }
         });
         
         window.addEventListener('scroll', () => {
